@@ -1,0 +1,19 @@
+Package: bsw
+Title: bsw
+Description: Simplified access to Blended Sea Winds data from R.
+URL: https://github.com/BigelowLab/bsw
+Version: 0.1
+Depends:
+    R (>= 4.1)
+Imports:
+    rlang,
+    dplyr,
+    sf,
+    stars,
+    ncdf4,
+    xyzt
+Maintainer: Ben Tupper <btupper@bigelow.org>
+Author: Ben Tupper <btupper@bigelow.org>, Johnathan Evanilla <jevanilla@bigelow.org>
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
