@@ -8,6 +8,7 @@ Depends:
 Imports:
     rlang,
     dplyr,
+    tidyr,
     sf,
     stars,
     ncdf4,
@@ -16,4 +17,4 @@ Maintainer: Ben Tupper <btupper@bigelow.org>
 Author: Ben Tupper <btupper@bigelow.org>, Johnathan Evanilla <jevanilla@bigelow.org>
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1

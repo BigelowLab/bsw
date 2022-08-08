@@ -66,7 +66,6 @@ bsw_product <- function(x = NULL){
 #' @export
 #' @param product character, the name of the product
 #' @param root character, the root URL
-#' @param version character the version to fetch
 #' @return one or more URLs
 bsw_url <- function(product = c("Aggregation_of_6h_Ocean_Wind", 
                                 "Aggregation_of_Daily_Ocean_Wind",

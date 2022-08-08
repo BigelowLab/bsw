@@ -18,10 +18,6 @@ bsw_nc_nav_point(X, g, res = bsw_res(X), lev = c(1, -1), varname = bsw_vars(X))
 \code{length} is the number of indices to retrieve (assumed to be contiguous sequence)}
 
 \item{varname}{character the name of the variable}
-
-\item{time}{numeric two elements time indexing \code{[start, length]}.
-\code{start} is a 1-based index into the time dimension
-\code{length} is the number of indices to retrieve (assumed to be contiguous sequence)}
 }
 \value{
 data frame 

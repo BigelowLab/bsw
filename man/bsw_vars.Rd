@@ -4,10 +4,12 @@
 \alias{bsw_vars}
 \title{Retrieve bsw variables}
 \usage{
-bsw_vars(X)
+bsw_vars(X, drop = c("time_run", "time_offset"))
 }
 \arguments{
 \item{X}{ncdf4 object}
+
+\item{drop}{character ietms to not list as variables.  Set to 'none' to drop none.}
 }
 \value{
 character vector

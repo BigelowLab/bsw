@@ -71,9 +71,6 @@ bsw_vars <- function(X, drop = c("time_run", "time_offset")){
 #' @param g geometry object that defines point locations
 #' @param res numeric, 2 element resolution \code{[res_x,res_y]}
 #' @param varname character the name of the variable
-#' @param time numeric two elements time indexing \code{[start, length]}.
-#'   \code{start} is a 1-based index into the time dimension
-#'   \code{length} is the number of indices to retrieve (assumed to be contiguous sequence)
 #' @param lev numeric two elements time indexing \code{[start, length]}.
 #'   \code{start} is a 1-based index into the level dimension
 #'   \code{length} is the number of indices to retrieve (assumed to be contiguous sequence)
@@ -177,7 +174,7 @@ bsw_nc_nav_bb <- function(X, g,
   
   # if the polyon contains time then we override any user supplied values 
   # for time
-  d <- get_geometry_dimension(g)
+  d <- xyzt::get_geometry_dimension(g)
   if (nchar(d) == 3){
     xyz <- sf::st_coordinates(g)
     btimes <- bsw_time(X)

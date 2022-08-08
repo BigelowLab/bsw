@@ -16,8 +16,6 @@ bsw_url(
 \item{product}{character, the name of the product}
 
 \item{root}{character, the root URL}
-
-\item{version}{character the version to fetch}
 }
 \value{
 one or more URLs
