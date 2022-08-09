@@ -111,7 +111,7 @@ bsw_nc_nav_point <- function(X, g,
                 })
     iz <- sapply(tbl[['T']],
                  function(z, t0 = NULL){
-                   which.min(abs(bsw_time(X) - (z + t0)))[1]
+                   which.min(abs(as.numeric(bsw_time(X) - z)))[1]
                  }, t0 = xyzt::POSIX_epoch())
     
     start <-  unname(c(ix,iy, lev[1], iz))
